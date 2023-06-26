@@ -1,0 +1,62 @@
+[ 2023-06-24 11:41:18,359 ] 16 root - INFO - >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Data Ingestion <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[ 2023-06-24 11:41:18,359 ] 23 root - INFO - Exporting collection data as pandas dataframe
+[ 2023-06-24 11:41:18,407 ] 27 root - INFO - Save data in feature store
+[ 2023-06-24 11:41:18,408 ] 33 root - INFO - Create feature store folder if not available
+[ 2023-06-24 11:41:18,410 ] 37 root - INFO - Save df to feature store folder
+[ 2023-06-24 11:41:18,419 ] 42 root - INFO - split dataset into train and test set
+[ 2023-06-24 11:41:18,425 ] 46 root - INFO - create dataset directory folder if not available
+[ 2023-06-24 11:41:18,425 ] 51 root - INFO - Save df to feature store folder
+[ 2023-06-24 11:41:18,433 ] 63 root - INFO - Data ingestion artifact: DataIngestionArtifact(feature_store_file_path='C:\\Users\\aswin\\OneDrive\\Documents\\Data Science\\Machine Learning Project\\Liver Patients\\artifact\\06242023__114118\\data_ingestion\\feature_store\\Liver_patient.csv', train_file_path='C:\\Users\\aswin\\OneDrive\\Documents\\Data Science\\Machine Learning Project\\Liver Patients\\artifact\\06242023__114118\\data_ingestion\\dataset\\train.csv', test_file_path='C:\\Users\\aswin\\OneDrive\\Documents\\Data Science\\Machine Learning Project\\Liver Patients\\artifact\\06242023__114118\\data_ingestion\\test.csv')
+[ 2023-06-24 11:41:18,433 ] 22 root - INFO - >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Data Validation <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[ 2023-06-24 11:41:18,433 ] 110 root - INFO - Reading base dataframe
+[ 2023-06-24 11:41:18,440 ] 113 root - INFO - Replace na value in base df
+[ 2023-06-24 11:41:18,440 ] 115 root - INFO - Drop null values colums from base df
+[ 2023-06-24 11:41:18,441 ] 44 root - INFO - selecting column name which contains null above to 0.2
+[ 2023-06-24 11:41:18,441 ] 47 root - INFO - Columns to drop: []
+[ 2023-06-24 11:41:18,444 ] 118 root - INFO - Reading train dataframe
+[ 2023-06-24 11:41:18,457 ] 120 root - INFO - Reading test dataframe
+[ 2023-06-24 11:41:18,465 ] 123 root - INFO - Drop null values colums from train df
+[ 2023-06-24 11:41:18,465 ] 44 root - INFO - selecting column name which contains null above to 0.2
+[ 2023-06-24 11:41:18,465 ] 47 root - INFO - Columns to drop: []
+[ 2023-06-24 11:41:18,465 ] 125 root - INFO - Drop null values colums from test df
+[ 2023-06-24 11:41:18,465 ] 44 root - INFO - selecting column name which contains null above to 0.2
+[ 2023-06-24 11:41:18,465 ] 47 root - INFO - Columns to drop: []
+[ 2023-06-24 11:41:18,465 ] 134 root - INFO - Is all required columns present in train df
+[ 2023-06-24 11:41:18,465 ] 136 root - INFO - Is all required columns present in test df
+[ 2023-06-24 11:41:18,465 ] 140 root - INFO - As all column are available in train df hence detecting data drift
+[ 2023-06-24 11:41:18,465 ] 88 root - INFO - Hypothesis Age: int64, int64 
+[ 2023-06-24 11:41:18,474 ] 88 root - INFO - Hypothesis Gender: object, object 
+[ 2023-06-24 11:41:18,476 ] 88 root - INFO - Hypothesis Total_Bilirubin: float64, float64 
+[ 2023-06-24 11:41:18,476 ] 88 root - INFO - Hypothesis Direct_Bilirubin: float64, float64 
+[ 2023-06-24 11:41:18,476 ] 88 root - INFO - Hypothesis Alkaline_Phosphotase: int64, int64 
+[ 2023-06-24 11:41:18,476 ] 88 root - INFO - Hypothesis Alamine_Aminotransferase: int64, int64 
+[ 2023-06-24 11:41:18,476 ] 88 root - INFO - Hypothesis Aspartate_Aminotransferase: int64, int64 
+[ 2023-06-24 11:41:18,476 ] 88 root - INFO - Hypothesis Total_Protiens: float64, float64 
+[ 2023-06-24 11:41:18,476 ] 88 root - INFO - Hypothesis Albumin: float64, float64 
+[ 2023-06-24 11:41:18,476 ] 88 root - INFO - Hypothesis Albumin_and_Globulin_Ratio: float64, float64 
+[ 2023-06-24 11:41:18,481 ] 88 root - INFO - Hypothesis Dataset: int64, int64 
+[ 2023-06-24 11:41:18,481 ] 143 root - INFO - As all column are available in test df hence detecting data drift
+[ 2023-06-24 11:41:18,481 ] 88 root - INFO - Hypothesis Age: int64, int64 
+[ 2023-06-24 11:41:18,483 ] 88 root - INFO - Hypothesis Gender: object, object 
+[ 2023-06-24 11:41:18,483 ] 88 root - INFO - Hypothesis Total_Bilirubin: float64, float64 
+[ 2023-06-24 11:41:18,484 ] 88 root - INFO - Hypothesis Direct_Bilirubin: float64, float64 
+[ 2023-06-24 11:41:18,484 ] 88 root - INFO - Hypothesis Alkaline_Phosphotase: int64, int64 
+[ 2023-06-24 11:41:18,484 ] 88 root - INFO - Hypothesis Alamine_Aminotransferase: int64, int64 
+[ 2023-06-24 11:41:18,484 ] 88 root - INFO - Hypothesis Aspartate_Aminotransferase: int64, int64 
+[ 2023-06-24 11:41:18,484 ] 88 root - INFO - Hypothesis Total_Protiens: float64, float64 
+[ 2023-06-24 11:41:18,484 ] 88 root - INFO - Hypothesis Albumin: float64, float64 
+[ 2023-06-24 11:41:18,484 ] 88 root - INFO - Hypothesis Albumin_and_Globulin_Ratio: float64, float64 
+[ 2023-06-24 11:41:18,488 ] 88 root - INFO - Hypothesis Dataset: int64, int64 
+[ 2023-06-24 11:41:18,488 ] 147 root - INFO - Write reprt in yaml file
+[ 2023-06-24 11:41:18,496 ] 152 root - INFO - Data validation artifact: DataValidationArtifact(report_file_path='C:\\Users\\aswin\\OneDrive\\Documents\\Data Science\\Machine Learning Project\\Liver Patients\\artifact\\06242023__114118\\data_validation\\report.yaml')
+[ 2023-06-24 11:41:18,496 ] 24 root - INFO - >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Data Transformation <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[ 2023-06-24 11:41:18,514 ] 78 root - INFO - Before resampling in training set Input: (466, 10) Target:(466,)
+[ 2023-06-24 11:41:18,534 ] 80 root - INFO - After resampling in training set Input: (642, 10) Target:(642,)
+[ 2023-06-24 11:41:18,534 ] 82 root - INFO - Before resampling in testing set Input: (117, 10) Target:(117,)
+[ 2023-06-24 11:41:18,538 ] 84 root - INFO - After resampling in testing set Input: (166, 10) Target:(166,)
+[ 2023-06-24 11:41:18,544 ] 46 root - INFO - Entered the save_object method of utils
+[ 2023-06-24 11:41:18,547 ] 50 root - INFO - Exited the save_object method of utils
+[ 2023-06-24 11:41:18,547 ] 46 root - INFO - Entered the save_object method of utils
+[ 2023-06-24 11:41:18,547 ] 50 root - INFO - Exited the save_object method of utils
+[ 2023-06-24 11:41:18,547 ] 114 root - INFO - Data transformation object DataTransformationArtifact(transform_object_path='C:\\Users\\aswin\\OneDrive\\Documents\\Data Science\\Machine Learning Project\\Liver Patients\\artifact\\06242023__114118\\data_transformation\\transformer\\transformer.pkl', transformed_train_path='C:\\Users\\aswin\\OneDrive\\Documents\\Data Science\\Machine Learning Project\\Liver Patients\\artifact\\06242023__114118\\data_transformation\\transformed\\train.npz', transformed_test_path='C:\\Users\\aswin\\OneDrive\\Documents\\Data Science\\Machine Learning Project\\Liver Patients\\artifact\\06242023__114118\\data_transformation\\transformed\\test.npz', target_encoder_path='C:\\Users\\aswin\\OneDrive\\Documents\\Data Science\\Machine Learning Project\\Liver Patients\\artifact\\06242023__114118\\data_transformation\\target_encoder\\target_encoder.pkl')
+[ 2023-06-24 11:41:18,547 ] 19 root - INFO - >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Model Trainer <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<

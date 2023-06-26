@@ -1,0 +1,71 @@
+data_drift_within_test_dataset:
+  Age:
+    pvalues: 0.3242776369693878
+    same_distribution: true
+  Alamine_Aminotransferase:
+    pvalues: 0.61985641015942
+    same_distribution: true
+  Albumin:
+    pvalues: 0.8942433189741478
+    same_distribution: true
+  Albumin_and_Globulin_Ratio:
+    pvalues: 0.20332994475939326
+    same_distribution: true
+  Alkaline_Phosphotase:
+    pvalues: 0.43009767096841545
+    same_distribution: true
+  Aspartate_Aminotransferase:
+    pvalues: 0.4984468401484861
+    same_distribution: true
+  Dataset:
+    pvalues: 0.9999700724632365
+    same_distribution: true
+  Direct_Bilirubin:
+    pvalues: 0.9983653330637425
+    same_distribution: true
+  Gender:
+    pvalues: 0.9999723976549086
+    same_distribution: true
+  Total_Bilirubin:
+    pvalues: 0.9986378595913286
+    same_distribution: true
+  Total_Protiens:
+    pvalues: 0.9892471841519742
+    same_distribution: true
+data_drift_within_train_dataset:
+  Age:
+    pvalues: 0.997630359704058
+    same_distribution: true
+  Alamine_Aminotransferase:
+    pvalues: 0.999970725906972
+    same_distribution: true
+  Albumin:
+    pvalues: 0.9999999938636545
+    same_distribution: true
+  Albumin_and_Globulin_Ratio:
+    pvalues: 0.9895615025780342
+    same_distribution: true
+  Alkaline_Phosphotase:
+    pvalues: 0.9994141836465001
+    same_distribution: true
+  Aspartate_Aminotransferase:
+    pvalues: 0.9997809233007853
+    same_distribution: true
+  Dataset:
+    pvalues: 1.0
+    same_distribution: true
+  Direct_Bilirubin:
+    pvalues: 1.0
+    same_distribution: true
+  Gender:
+    pvalues: 1.0
+    same_distribution: true
+  Total_Bilirubin:
+    pvalues: 1.0
+    same_distribution: true
+  Total_Protiens:
+    pvalues: 0.9999999999999939
+    same_distribution: true
+missing_values_within_base_dataset: []
+missing_values_within_test_dataset: []
+missing_values_within_train_dataset: []
